@@ -16,9 +16,9 @@ module.exports = (webpackConfigEnv, argv) => {
       path: path.resolve(__dirname, "dist"),
     },
     entry: {
-      {{component_id}}: path.resolve(
+      PriyankaComponent: path.resolve(
         __dirname,
-        "mfe/{{component_id}}/index.tsx"
+        "mfe/PriyankaComponent/index.tsx"
       ),
     },
     externals: [

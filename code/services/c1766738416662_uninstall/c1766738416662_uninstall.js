@@ -1,6 +1,6 @@
 /**
  * Type: Micro Service
- * Description: Install action service for installing the IA entities 
+ * Description: Uninstall action service for uninstalling the IA entities 
  * Runs as: IA User
  * @param {CbServer.BasicReq} req
  * @param {string} req.systemKey
@@ -12,11 +12,11 @@
  * @param {CbServer.Resp} resp
  */
 
-function {{component_prefix}}_install(req, resp) {
+function c1766738416662_uninstall(req, resp) {
   /** @type {entity_id: string, component_id: string, mfe_settings: Record<string, unknown>} */
   const params = req.params;
   const mfe_settings = params.mfe_settings;
   console.log('mfe_settings: ', mfe_settings);
-  //component install behavior here. Initialize an instance of the component for use
+  //component uninstall behavior here, undo any steps done in the install service
   resp.success('Success');
 }

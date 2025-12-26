@@ -13,7 +13,7 @@
  * @param {CbServer.Resp} resp
  */
 
-function {{component_prefix}}_teardown(req, resp) {
+function c1766738416662_teardown(req, resp) {
   const params = req.params;
   //component teardown behavior here. Undo any setup done in the setup service
   resp.success('Success');
